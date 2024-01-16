@@ -1,0 +1,59 @@
+<!-- activity_webview.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#67B2EF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/close"
+            android:contentDescription="@string/k_butonu"/>
+
+        <ImageView
+            android:id="@+id/ImageViewSecure"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/secure"
+            android:contentDescription="@string/k_butonu"/>
+
+        <TextView
+            android:id="@+id/urlTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_weight="1"
+            android:text="URL"
+            android:gravity="center_vertical"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/refreshButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/refresh"
+            android:contentDescription="@string/yenileme_butonu"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

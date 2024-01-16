@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.KelimeGündem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryContainer">@color/primaryContainerColor</item>
+        <item name="colorOnPrimary">@color/onPrimaryColor</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainerColor</item>
+        <item name="colorOnSecondary">@color/onSecondaryColor</item>
+
+        <!-- Tertiary brand color -->
+        <item name="colorTertiary">@color/tertiaryColor</item>
+        <item name="colorTertiaryContainer">@color/tertiaryContainerColor</item>
+        <item name="colorOnTertiary">@color/onTertiaryColor</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/errorColor</item>
+        <item name="colorErrorContainer">@color/errorContainerColor</item>
+        <item name="colorOnError">@color/onErrorColor</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kelime Gündem</string>
+    <string name="haberler">Haberler</string>
+    <string name="haber_resmi">Haber Resmi</string>
+    <string name="kelime_g_ndem_logo">Kelime Gündem Logo</string>
+    <string name="yenileme_butonu">Yenileme Butonu</string>
+    <string name="k_butonu">Çıkış Butonu</string>
+    <string name="k">Çıkış</string>
+    <string name="favoriler">Favoriler</string>
+    <string name="payla">Paylaş</string>
+    <string name="be_en">Beğen</string>
+    <string name="devam_n_oku">Devamını Oku</string>
+    <string name="tarih">Tarih</string>
+    <string name="kaynak">Kaynak</string>
+    <string name="ge_mi_ten_kald_r">Geçmişten Kaldır</string>
+</resources>

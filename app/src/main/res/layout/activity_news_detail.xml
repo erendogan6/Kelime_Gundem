@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondaryContainerColor"
+    tools:context=".ui.NewsDetailActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newsplaceholder"
+            android:contentDescription="@string/haber_resmi" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:background="@drawable/close_background"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/k" />
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/pt_serif_bold"
+        android:text="Haber Başlığı: Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/onPrimaryColor"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imagePen"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/pencil"
+                    android:contentDescription="@string/kaynak" />
+
+                <TextView
+                    android:id="@+id/textViewAuthor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/merriweather_light_italic"
+                    android:text="Türkiye"
+                    android:textColor="@color/onBackground"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewCalendar"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/calendar"
+                        android:contentDescription="@string/tarih" />
+
+                    <TextView
+                        android:id="@+id/textViewpublishedAt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/lora"
+                        android:maxLines="1"
+                        android:text="14.01.2024"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/onBackground"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/lato"
+                android:text="Haber İçeriği: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textColor="#1C1815"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iconShare"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:contentDescription="@string/payla" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/iconHeart"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/heart"
+                    android:contentDescription="@string/be_en" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/buttonReadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/onPrimaryColor"
+                    android:textSize="16sp"
+                    android:text="@string/devam_n_oku"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

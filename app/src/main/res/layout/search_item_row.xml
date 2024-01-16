@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewQuery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Gündem"
+        android:textColor="@color/onPrimaryColor"
+        android:textSize="17sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/buttonDelete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/close"
+        android:contentDescription="@string/ge_mi_ten_kald_r" />
+
+
+</LinearLayout>

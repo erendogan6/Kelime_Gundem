@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_cardview"
+    android:layout_marginBottom="15dp">
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="190dp"
+        android:contentDescription="@string/haber_resmi" />
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/pt_serif_bold"
+        android:text="Haber Başlığı"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/onPrimaryColor"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="6dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imagePen"
+            android:layout_width="15dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/pencil"
+            android:contentDescription="Kaynak" />
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/merriweather_light_italic"
+            android:text="Haber Kaynağı"
+            android:textColor="@color/onBackground"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageViewCalendar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/calendar"
+                android:contentDescription="Tarih" />
+
+            <TextView
+                android:id="@+id/textViewpublishedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/lora"
+                android:maxLines="1"
+                android:text="Haber Tarihi"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/onBackground"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Haber Açıklaması"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#67B2EF"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:iconifiedByDefault="false"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="10dp"
+            android:inputType="text"
+            android:queryHint="Arama Yapabilirsiniz"
+            android:searchIcon="@drawable/search3" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_weight="1"
+            android:contentDescription="@string/kelime_g_ndem_logo" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:visibility="visible"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4FFDBCA"
+        android:layout_below="@+id/topLayout"
+        android:padding="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
+

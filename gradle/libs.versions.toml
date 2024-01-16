@@ -1,0 +1,48 @@
+[versions]
+agp = "8.2.1"
+databindingRuntime = "8.2.1"
+glide = "4.16.0"
+hiltAndroid = "2.50"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+lifecycleLivedataKtx = "2.7.0"
+lifecycleViewmodelKtx = "2.7.0"
+navigationFragmentKtx = "2.7.6"
+navigationUiKtx = "2.7.6"
+retrofit = "2.9.0"
+activity = "1.8.2"
+legacySupportV4 = "1.0.0"
+fragmentKtx = "1.6.2"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-databinding-runtime = { module = "androidx.databinding:databinding-runtime", version.ref = "databindingRuntime" }
+androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationFragmentKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
